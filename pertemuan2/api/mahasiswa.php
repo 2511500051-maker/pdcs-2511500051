@@ -1,7 +1,7 @@
 <?php
 
-require_once "../config.php";
-require_once "../helpers/response.php";
+require_once __DIR__ . "/../config.php";
+require_once __DIR__ . "/../helpers/response.php";
 
 $q = "SELECT m.id, m.nama, m.nim, j.nama_jurusan AS jurusan 
 FROM mahasiswa m LEFT JOIN jurusan j on m.jurusan_id = j.id ORDER BY m.id DESC";
